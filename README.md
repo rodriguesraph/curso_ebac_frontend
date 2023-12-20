@@ -1,1 +1,1 @@
-# curso_ebac_frontend
+# Repositório para exercícios do curso da EBAC
