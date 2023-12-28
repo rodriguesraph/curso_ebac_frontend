@@ -1,7 +1,12 @@
 /* Estilização usando Tags */
 
 h1 {
-    color: blueviolet;
+    color: gray;
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
 }
 
 /* Estilização usando ID */
@@ -16,6 +21,10 @@ h1 {
 
 #economia h2 {
     color: darkblue;
+}
+
+#tecnologia h2 {
+    color: blueviolet;
 }
 
 /* Estilização usando Classes */
@@ -107,6 +116,10 @@ section {
     background-color: darkblue;
 }
 
+#tecnologia .articles article a {
+    background-color: blueviolet;
+}
+
 .articles article a:hover {
     font-weight: bold;
 }
@@ -121,4 +134,8 @@ section {
 
 #economia {
     background-color: rgba(0, 0, 255, 0.1);
+}
+
+#tecnologia {
+    background-color: rgba(150, 0, 255, 0.1);
 }
