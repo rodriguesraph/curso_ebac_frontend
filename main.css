@@ -54,3 +54,8 @@ section .container {
     margin-right: 14px;
     margin-bottom: 14px;
 }
+
+.container div {
+    width: 25%;
+    flex-wrap: wrap;
+}
