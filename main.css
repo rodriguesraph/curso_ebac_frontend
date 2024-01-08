@@ -42,7 +42,8 @@ section .container {
 }
 
 #fachada {
-    width: 800px;
+    width: 60%;
+    margin-right: 24px;
 }
 
 .brands img {
@@ -55,7 +56,15 @@ section .container {
     margin-bottom: 14px;
 }
 
-.container div {
-    width: 25%;
-    flex-wrap: wrap;
+section .container {
+    align-items: flex-start;
 }
+
+section {
+    padding: 24px 0;
+}
+
+h1 {
+    display: block;
+}
+
