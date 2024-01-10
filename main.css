@@ -31,7 +31,8 @@ header nav li a {
 }
 
 header .container,
-section .container {
+section .container,
+.servicos {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -70,6 +71,7 @@ section {
 
 #plataformas h1 {
     color: blue;
+    margin-bottom: 40px;
 }
 
 #plataformas {
@@ -80,3 +82,21 @@ section {
     text-align: center;
 }
 
+.servicos article {
+    width: 32%;
+}
+
+.servicos article img {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+p,
+h2 {
+    margin-bottom: 8px;
+}
