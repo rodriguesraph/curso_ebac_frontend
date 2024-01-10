@@ -100,3 +100,13 @@ p,
 h2 {
     margin-bottom: 8px;
 }
+
+h1,
+h2,
+header {
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
