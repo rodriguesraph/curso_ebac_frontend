@@ -64,7 +64,19 @@ section {
     padding: 24px 0;
 }
 
-h1 {
-    display: block;
+.coluna {
+    flex-direction: column;
+}
+
+#plataformas h1 {
+    color: blue;
+}
+
+#plataformas {
+    text-align: center;
+}
+
+.centralizado {
+    text-align: center;
 }
 
