@@ -1,4 +1,6 @@
 const formulario = document.getElementById('form-comparador')
+const msgErro = '<b>ATENÇÃO:</b> O número do segundo campo precisa ser maior.'
+const msgSucesso = 'Formulário enviado com sucesso!'
 
 formulario.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -8,13 +10,19 @@ formulario.addEventListener('submit', function(e) {
 
     var campo1number = parseInt(campo1, 10);
     var campo2number = parseInt(campo2, 10);
+
+    var containerMsgVariavel = document.querySelector('.msg-variavel')
     
     if (campo2number > campo1number) {
-        alert('Formulário enviado com sucesso!');
-        document.getElementById('valor1').value = ''
-        document.getElementById('valor2').value = ''
+        containerMsgVariavel.innerHTML = msgSucesso;
+        containerMsgVariavel.style.display = 'block'
+        containerMsgVariavel.style.backgroundColor = 'green'
+        document.getElementById('valor1').value = '';
+        document.getElementById('valor2').value = '';
     }
     else {
-        alert('ATENÇÃO: O número do segundo campo precisa ser maior.')
+        containerMsgVariavel.innerHTML = msgErro;
+        containerMsgVariavel.style.display = 'block'
+        containerMsgVariavel.style.backgroundColor = 'red'
     }
 })

@@ -8,11 +8,20 @@ body {
     padding: 20% 0;
 }
 
+p,
 h1,
 form {
     margin: auto;
     width: 25%;
     text-align: center;
+}
+
+.msg-variavel {
+    margin-bottom: 8px;
+    background-color: green;
+    display: none;
+    padding: 8px;
+    color: white;
 }
 
 h1 {
