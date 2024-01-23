@@ -10,37 +10,39 @@
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <header>
-        <img src="./midia/logo.png" alt="Logo Cabeçalho">
-        <h1>Calculadora de Médias</h1>
-    </header>
-    <form>
-        <input type="text" placeholder="Nome da Atividade" required />
-        <input type="number" placeholder="Nota" required />
-        <button type="submit">Adicionar +</button>
-    </form>
-    <table>
-        <thead>
-            <tr>
-                <th>Nome da Atividade</th>
-                <th>Nota</th>
-                <th>Aprovado?</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Atividade 1</td>
-                <td>7</td>
-                <td><img src="./midia/aprovado.png" alt=""></td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td>Média Final</td>
-                <td>7</td>
-                <td>Aprovado</td>
-            </tr>
-        </tfoot>
-    </table>
+    <div class="container">
+        <header>
+            <img src="./midia/logo.png" alt="Logo Cabeçalho">
+            <h1>Calculadora de Médias</h1>
+        </header>
+        <form>
+            <input type="text" placeholder="Nome da Atividade" required />
+            <input type="number" placeholder="Nota" required />
+            <button type="submit">Adicionar +</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome da Atividade</th>
+                    <th>Nota</th>
+                    <th>Aprovado?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Atividade 1</td>
+                    <td>7</td>
+                    <td><img src="./midia/aprovado.png" alt=""></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Média Final</td>
+                    <td>7</td>
+                    <td><span class="resultado aprovado">Aprovado</span></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 </body>
 </html>

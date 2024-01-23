@@ -7,4 +7,88 @@
 
 body {
     background-color: #e7e7e7;
+    padding-top: 100px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+header img {
+    height: 36px;
+    margin-right: 16px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+form input {
+    font-size: 24px;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 8px;
+    margin-right: 8px;
+}
+
+form button {
+    background-color: #009432;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+table {
+    width: 100%;
+}
+
+table th {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    padding: 8px;
+}
+
+table td {
+    text-align: center;
+    font-size: 21px;
+    padding: 16px 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2)
+}
+
+table td img {
+    height: 30px;
+}
+
+.resultado {
+    padding: 8px;
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.aprovado {
+    background-color: #009432;
+}
+
+.reprovado {
+    background-color: red;
 }
