@@ -1,0 +1,14 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin-top: 20%;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+ul li {
+    list-style-position: inside;
+    padding-left: 0;
+}
