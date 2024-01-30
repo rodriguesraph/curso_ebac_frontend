@@ -6,4 +6,9 @@ $(document).ready(function() {
         $(novaTarefa).appendTo('ul');
         $('#cadastro-tarefa').val('');
     })
+
+    $('ul').on('click', 'li', function() {
+        $(this).toggleClass("riscado");
+    })
+
 })
