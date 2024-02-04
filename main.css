@@ -23,6 +23,10 @@ header {
     margin-top: 30%;
 }
 
+h1 {
+    margin-bottom: 16px;
+}
+
 label {
     font-weight: bold;
 }
@@ -37,7 +41,7 @@ form input {
 
 form button {
     width: 100%;
-    margin-top: 16px;
+    margin-top: 24px;
     padding: 8px;
     background-color: orangered;
     color: white;
