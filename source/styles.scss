@@ -1,6 +1,11 @@
 @use 'config/reset';
 @use 'config/variaveis';
 
+@mixin whiteDecorationNone($color: #fff) {
+    color: $color;
+    text-decoration: none;
+}
+
 body {
     background-color: variaveis.$corDoFundo;
 }
@@ -20,27 +25,26 @@ header {
     position: sticky;
     top: 0;
     left: 0;
-}
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+    }
 }
 
 .menu {
     display: flex;
-}
 
-.menu li {
-    font-weight: bold;
-    margin-left: 24px;
-}
+    li {
+        font-weight: bold;
+        margin-left: 24px;
 
-.menu li a {
-    color: #fff;
-    text-decoration: none;
+        a {
+            @include whiteDecorationNone();
+        }
+    }
 }
 
 section {
@@ -62,21 +66,20 @@ section {
 }
 
 .product-button {
+    @include whiteDecorationNone();
     display: block;
     background-color: variaveis.$corDoBotao;
-    color: #fff;
     text-align: center;
     padding: 8px 0;
     border-radius: 8px;
     margin-top: 8px;
-    text-decoration: none;
+
+    &:hover {
+        background-color: lighten(variaveis.$corDoBotao, 10%);
+    }
 }
 
-.product-button:hover {
-    background-color: #4cd137;
-}
-
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: variaveis.$tablet) {
     .container {
         max-width: 80%;
     }
@@ -87,7 +90,7 @@ section {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: variaveis.$mobile) {
     .products {
         display: block;
     }
