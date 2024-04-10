@@ -1,0 +1,30 @@
+@use 'variaveis';
+
+body {
+    background-color: variaveis.$bgBody;
+    text-align: center;
+}
+
+header {
+    background-color: variaveis.$bgHeader;
+
+    h1 {
+        color: variaveis.$txtHeader;
+    }
+}
+
+main {
+    background-color: variaveis.$bgMain;
+
+    h2, p {
+        color: variaveis.$txtMain;
+    }
+}
+
+footer {
+    background-color: variaveis.$bgFooter;
+
+    p {
+        color: variaveis.$txtFooter;
+    }
+}

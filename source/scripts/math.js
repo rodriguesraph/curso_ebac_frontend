@@ -1,0 +1,3 @@
+const subtrair = require('./minus');
+
+console.log('A subtração de 50 por 25 é: ', subtrair(50, 25));
