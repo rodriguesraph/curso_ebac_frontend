@@ -10,6 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('https://api.github.com/users/rodriguesraph').then(function(res) {
         return res.json();
     })
+    .catch(function(erro) {
+        alert("Ocorreu um erro na requisição da URL.")
+    })
     .then(function(json) {
         nameFetch.innerText = json.name;
         usernameFetch.innerText = json.login;
